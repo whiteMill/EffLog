@@ -30,7 +30,7 @@ public class BussAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return bussinessVoList.size();
+        return  bussinessVoList.size();
     }
 
     @Override
