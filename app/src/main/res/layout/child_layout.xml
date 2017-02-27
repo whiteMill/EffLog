@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="1"
+            android:textSize="18sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/child_title"/>
+
+        <TextView
+            android:textColor="@color/textdefault"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="寻寻军军军军少付所"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/child_content"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/child_title"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/time_detil"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/time"
+            android:paddingBottom="5dp"
+            android:text="止：2016-12-12 09:11"
+            android:textColor="#666666"
+            android:textSize="@dimen/log_time_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

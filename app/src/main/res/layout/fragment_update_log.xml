@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.stk.updatefragment.UpdateLogFragment">
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/updateLog"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="更新"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_above="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/updateListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_toRightOf="@+id/default_img"
+            android:paddingBottom="16dp"
+            android:text="张三"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/log_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/default_img"
+            android:paddingTop="16dp"
+            android:text="2016-04-01"
+            android:textSize="13sp"
+        />
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/log_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:text="周计划"
+            android:textSize="18sp"/>
+        <ImageView
+            android:id="@+id/default_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/user_default" android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/outTimeLayout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="3dp"
+                android:text="超时未完成"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/time_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/uncomLayout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="3dp"
+                android:text="未完成"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/unCom_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comLayout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="3dp"
+                android:text="已完成"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/com_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="今日总结"/>
+
+    <RelativeLayout
+        android:id="@+id/summary_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/log_write_shape">
+
+        <TextView
+            android:id="@+id/log_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="时诵诗书收拾收拾生生世世试试收拾收拾试试"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:id="@+id/log_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:textSize="@dimen/comment_size"
+            android:text="评论"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

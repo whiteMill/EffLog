@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wgray"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="#A7A7A7"
+        android:layout_height="1px"/>
+
+     <TextView
+        android:id="@+id/dayLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="日计划"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/weekLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="周计划"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/monthLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="月计划"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/seasonLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="季计划"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/yearLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="年计划"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/btnCancle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="取消"
+        android:textColor="@color/black" />
+</LinearLayout>

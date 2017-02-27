@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/layoutBackground"
+              tools:context="com.stk.fragment.ProjectFragment">
+
+    <RelativeLayout
+        android:id="@+id/top_re"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:id="@+id/mLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:background="@drawable/contact_shape"
+            android:padding="1dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/bussTex"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:text="商机管理"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/layoutBackground"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/proTex"
+                android:gravity="center"
+                android:text="项目管理"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/layoutBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_add"
+            android:layout_marginRight="14dp"
+            android:id="@+id/addPro"
+            android:layout_alignBottom="@+id/mLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"/>
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/proViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+
+
+
+</LinearLayout>

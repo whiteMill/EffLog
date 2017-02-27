@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_project"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buss_background"
+    tools:context="com.stk.ui.ProjectActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:text="项少时诵诗书少时诵诗书少时诵诗书所所所所目"
+            android:id="@+id/proName"
+            android:textColor="@color/layoutBackground"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/proEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="编辑"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/title_change"
+        android:layout_below="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/one_pro_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="未开始"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:textSize="@dimen/title_size"
+                android:gravity="center"
+                android:textColor="@color/tabColor"
+                android:id="@+id/unBegInfo"
+                android:layout_height="wrap_content"/>
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_below="@+id/unBegInfo"
+                       android:id="@+id/unBegInfoIm"
+                       android:background="@color/tabColor"
+                       android:layout_height="2dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/two_pro_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="进行中"
+                android:paddingTop="7dp"
+                android:textSize="@dimen/title_size"
+                android:paddingBottom="7dp"
+                android:gravity="center"
+                android:id="@+id/beginInfo"
+                android:layout_height="wrap_content"/>
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_below="@+id/beginInfo"
+                       android:background="@color/colorPrimaryDark"
+                       android:visibility="invisible"
+                       android:id="@+id/beginInfofoIm"
+                       android:layout_height="2dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/three_pro_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="已完成"
+                android:paddingTop="7dp"
+                android:textSize="@dimen/title_size"
+                android:paddingBottom="7dp"
+                android:gravity="center"
+                android:id="@+id/compleInfo"
+                android:layout_height="wrap_content"/>
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_below="@+id/compleInfo"
+                       android:background="@color/colorPrimaryDark"
+                       android:visibility="invisible"
+                       android:id="@+id/compleInfoIm"
+                       android:layout_height="2dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@+id/title_change"
+        android:layout_above="@+id/add_item"
+        android:id="@+id/proSwipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/proInfoListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/add_item"
+        android:text="新建任务"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:textSize="15sp"
+        android:background="@color/buss_gen"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

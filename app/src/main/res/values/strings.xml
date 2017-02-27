@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">效率日志2.0</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <array name="ItemEqual">
+        <item>A(最重要-自己做)</item>
+        <item>B(重要-压缩做)</item>
+        <item>C(次重要-授权别人做)</item>
+    </array>
+
+    <array name="proItem">
+        <item>新建项目</item>
+        <item>新建商机</item>
+    </array>
+
+    <array name="bussItem">
+        <item>删除</item>
+        <item>设置提醒</item>
+    </array>
+
+    <drawable name="ok_press">#808080</drawable>
+    <drawable name="ok_unpress">#808080</drawable>
+    <drawable name="cancel_press">#C2C2C2</drawable>
+    <drawable name="cancel_unpress">#D4D4D4</drawable>
+</resources>

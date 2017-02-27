@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             android:background="@color/layoutBackground"
+             tools:context="com.stk.fragment.WorkFragment">
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="工作"
+            android:textColor="@color/layoutBackground"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/addLog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:text="添加"
+            android:textColor="@color/layoutBackground"
+            android:textSize="18sp"/>
+        <TextView
+            android:text="筛选"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/layoutBackground"
+            android:textSize="18sp"
+            android:visibility="visible"
+            android:paddingLeft="10dp"
+            android:id="@+id/chooseText"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dasd"
+        android:layout_below="@+id/top_view"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/dayLog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="日计划"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:textSize="@dimen/title_size"
+                android:gravity="center"
+                android:textColor="@color/tabColor"
+                android:id="@+id/day"
+                android:layout_height="wrap_content"/>
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_below="@+id/day"
+                       android:id="@+id/dayIm"
+                       android:background="@color/tabColor"
+                       android:layout_height="2dp"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/weekLog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="周计划"
+                android:paddingTop="7dp"
+                android:textSize="@dimen/title_size"
+                android:paddingBottom="7dp"
+                android:gravity="center"
+                android:id="@+id/week"
+                android:layout_height="wrap_content"/>
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_below="@+id/week"
+                       android:background="@color/colorPrimaryDark"
+                       android:visibility="invisible"
+                       android:id="@+id/weekIm"
+                       android:layout_height="2dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/monthLog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="月计划"
+                android:paddingTop="7dp"
+                android:textSize="@dimen/title_size"
+                android:paddingBottom="7dp"
+                android:gravity="center"
+                android:id="@+id/month"
+                android:layout_height="wrap_content"/>
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_below="@+id/month"
+                       android:background="@color/colorPrimaryDark"
+                       android:visibility="invisible"
+                       android:id="@+id/monthIm"
+                       android:layout_height="2dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/seasonLog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="季计划"
+                android:paddingTop="7dp"
+                android:textSize="@dimen/title_size"
+                android:paddingBottom="7dp"
+                android:gravity="center"
+                android:id="@+id/season"
+                android:layout_height="wrap_content"/>
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_below="@+id/season"
+                       android:background="@color/colorPrimaryDark"
+                       android:visibility="invisible"
+                       android:id="@+id/seasonIm"
+                       android:layout_height="2dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yearLog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="年计划"
+                android:paddingTop="7dp"
+                android:textSize="@dimen/title_size"
+                android:paddingBottom="7dp"
+                android:gravity="center"
+                android:id="@+id/year"
+                android:layout_height="wrap_content"/>
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_below="@+id/year"
+                       android:visibility="invisible"
+                       android:id="@+id/yearIm"
+                       android:background="@color/colorPrimaryDark"
+                       android:layout_height="2dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/dasd"
+        android:id="@+id/mViewPager"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stk.ui.LoginActivity">
+
+    <ImageView
+        android:id="@+id/user_line"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:background="#666666"
+        android:layout_below="@+id/user_name"
+        android:layout_height="0.5dp"/>
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="211dp"
+        android:paddingLeft="50dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:background="@null"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:inputType="textPersonName"
+        android:hint="手机号或用户名"
+        android:layout_alignParentTop="true"
+    />
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_alignStart="@+id/user_name"
+        android:layout_below="@+id/user_line"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:ems="10"
+        android:hint="密码"
+        android:background="@null"
+        android:inputType="textPassword"
+    />
+
+    <ImageView
+        android:id="@+id/password_line"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:background="#666666"
+        android:layout_below="@+id/user_password"
+        android:layout_height="0.5dp"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:textSize="20sp"
+        android:text="登陆"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edit_btn_selector"
+        android:layout_below="@+id/password_line"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

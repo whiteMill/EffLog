@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.stk.efflog.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/changeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+    ></View>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layoutBackground"
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/MessageCenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/message_pressed"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="消息"
+            android:textColor="@color/tabColor" />
+
+        <RadioButton
+            android:id="@+id/WorkCenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/log_normal"
+            android:gravity="center"
+            android:drawablePadding="2dp"
+            android:textSize="12sp"
+            android:text="工作"
+            android:textColor="@color/tabTex" />
+
+        <RadioButton
+            android:id="@+id/ProCenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/pro_normal"
+            android:gravity="center"
+            android:drawablePadding="2dp"
+            android:textSize="12sp"
+            android:text="项目"
+            android:textColor="@color/tabTex" />
+
+
+        <RadioButton
+            android:id="@+id/UserCenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/user_normal"
+            android:gravity="center"
+            android:drawablePadding="2dp"
+            android:text="我的"
+            android:textSize="12sp"
+            android:textColor="@color/tabTex" />
+
+    </RadioGroup>
+
+</LinearLayout>

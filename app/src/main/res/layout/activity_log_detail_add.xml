@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_log_detail_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stk.ui.LogDetailAddActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="日志新增"
+            android:textColor="@color/layoutBackground"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/log_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="上传"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/top_view"
+        android:layout_above="@+id/mAddLog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+
+            <com.stk.utils.LogExpandView
+                android:id="@+id/logListView"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/fen_image"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:background="@color/backgroundColor"
+                android:layout_height="10dp"/>
+
+            <com.stk.utils.LogListView
+                android:id="@+id/freeListView"
+                android:layout_below="@+id/logListView"
+                android:layout_above="@+id/mAddLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.stk.utils.LogListView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/mAddLog"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/edit_btn_selector"
+        android:text="添加"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

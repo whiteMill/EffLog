@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:text="回复郭军："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_name"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/from_name"
+        android:layout_alignLeft="@+id/from_name"
+        android:layout_alignStart="@+id/from_name"/>
+    <TextView
+        android:text="2016-12-1 14:00"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_time"
+        android:paddingBottom="3dp"
+        android:layout_alignBaseline="@+id/back_comment"
+        android:layout_alignBottom="@+id/back_comment"
+        android:layout_alignLeft="@+id/to_name"
+        android:layout_alignStart="@+id/to_name"/>
+    <TextView
+        android:text="快递费免费书所少时诵诗所所你"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:id="@+id/comment_content"
+        android:layout_alignBaseline="@+id/to_name"
+        android:layout_alignBottom="@+id/to_name"
+        android:layout_toRightOf="@+id/comment_time"
+    />
+    <TextView
+        android:text="回复"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="38dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginEnd="38dp"
+        android:id="@+id/back_comment"
+        android:layout_below="@+id/comment_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:text="万黎建"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="3dp"
+        android:id="@+id/from_name"
+        android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="logType">
+        <item>日计划</item>
+        <item>周计划</item>
+        <item>月计划</item>
+        <item>季计划</item>
+        <item>年计划</item>
+    </string-array>
+</resources>

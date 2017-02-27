@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+       android:layout_marginTop="3dp"
+        android:padding="3dp"
+        android:layout_marginLeft="5dp"
+        android:text="2016-12-12 08:05"
+       android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/remind_time"/>
+
+    <TextView
+        android:background="#d9d9d9"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:text="反反复复付付付付凤飞飞的的点点滴滴多多多的点点滴滴多"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/remind_content"/>
+    
+    <TextView android:layout_width="match_parent"
+              android:layout_height="8dp"/>
+
+</LinearLayout>
